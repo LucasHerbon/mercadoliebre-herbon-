@@ -8,7 +8,7 @@ const publicPath = path.resolve(__dirname, "../public");
 app.use(express.static(publicPath));
 
 const port = process.env.PORT || 3030;
-app.listen(port, () => console.log ("Servidor corriendo en: http://localhost:3030/"));
+app.listen(port, () => console.log (`Servidor corriendo en: http://localhost:${port}`));
 app.get("/", (req, res) => {
     res.sendFile(path.resolve(__dirname, "./views/index.html"))
 });
