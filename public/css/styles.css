@@ -1,0 +1,393 @@
+/* Universales */
+
+html {
+    font-family: 'Roboto', sans-serif;
+    background-color: #EAC926;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #EAC926;
+}
+
+/* HEADER */
+
+header {
+    /* position: fixed; */
+    background-color: #EAC926;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.top-nav ul {
+    display: flex;
+    margin: 5px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.top-nav li {
+    margin: 5px;
+}
+
+.header-principal {
+    margin: 35px;
+}
+
+.header-compra {
+    font-size: 20px;
+    width: 25%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-page {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* MAIN */
+
+main img {
+    width: 50%;
+    height: auto;
+}
+
+main {
+    width: 100%;
+    padding: 20px;
+    background-color: #ebebeb;
+}
+
+.cuerpos-texto {
+    font-size: 12px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    padding: 30px;
+}
+
+footer ul {
+    padding: 1px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+    .logo-footer {
+        color: #1259c3;
+        transition: all 500ms;
+    }
+
+    .logo-footer:hover{color: #666;
+    }
+}
+
+footer li {
+    list-style-type: none;
+    margin: 1px;
+}
+
+.titulo-footer {
+    font-weight: bold;
+    margin: 20px;
+}
+/* ETIQUETAS */
+
+/* .section-main {
+    background-color: #ebebeb;
+    width: 48%;
+    background-size: cover;
+    text-align: center;
+    padding: 10px;
+    border-top:#ebebeb 2px solid;
+    margin: 5px;
+} */
+
+.publicidad {
+    /* margin-top: 220px; */
+    width: 100%;
+    box-shadow: 0px 0px 5px rgb(100, 100, 100)
+}
+
+.burger {
+    text-align: center;
+    margin: 20px;
+}
+
+.material-symbols-outlined {
+    background-color: #1259c3;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.precios {
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.descuento {
+    font-size: 16px;
+    color: #39b54a;
+    padding-left: 10%;
+}
+
+.descripcion {
+    font-size: 16px;
+    color: white;
+    transition: all 500ms;
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 5px;
+}
+
+.titulares {
+    font-size: 24px;
+    text-align: left;
+}
+
+.logo-mercado-liebre {
+    width: 25%;
+}
+
+.logo-envio {
+    position: relative;
+    left: 70%;
+    top: 27px;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    text-align: right;
+    color: #39b54a;;
+    border: solid 1.5px #39b55a;
+    border-radius: 50px;
+    padding: 5px;
+    margin: 10px;
+    transition: all 1000ms;
+}
+
+.section-main:hover{
+    .logo-envio{ transform: rotate(-90deg);}
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.barra-tareas {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input {
+    border-radius: 5px;
+    height: 30px;
+    width: 500px;
+    margin: 5px;
+    border-color: transparent;
+}
+
+.boton-busqueda {
+    border-radius: 5px;
+    height: 30px;
+    width: 30px;
+    border-color: transparent;
+    background-color: white;
+}
+
+.div-publicidad {
+    background-color: #ebebeb;
+}
+
+.decoration-links {
+    text-decoration: none;
+}
+
+.borde-decorativo{
+    border-top: #ebebeb 2px solid;
+    margin-bottom: 20px;
+}
+
+.decoracion-textos {
+    display: flex;
+}
+
+/*--- MEDIAS QUERIES ---*/
+
+/* Moviles */
+@media (max-width: 425px) {
+    .section-main {
+        background-color: white;
+        text-align: center;
+        margin: 5px;
+        width: 100%;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .contenedor {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        padding: 10px;
+        margin: 2px;
+    }
+
+
+    header {
+        display: block;
+        justify-content: space-between;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .top-nav {
+        display: none;
+    }
+
+    .logo-mercado-liebre {
+        width: 100%;
+    }
+
+    .header-compra {
+        display: none;
+    }
+
+    .barra-tareas {
+        width: 20%;
+        text-align: center;
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer ul {
+        padding: 1px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+}
+
+/* tablets */
+@media (min-width: 425px) and (max-width: 768px) {
+
+    .contenedor {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        margin: 2px;
+    }
+
+    .section-main {
+        background-color: white;
+        text-align: center;
+        margin: 5px;
+        width: 45%;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    header {
+        display: block;
+        justify-content: space-between;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    .top-nav {
+        display: none;
+    }
+
+    .logo-mercado-liebre {
+        width: 50%;
+    }
+
+    .header-compra {
+        display: none;
+    }
+
+    .barra-tareas {
+        width: 50%;
+        margin: 20px;
+    }
+
+    footer ul {
+        padding: 1px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+
+    .contenedor {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .section-main {
+        background-color: white;
+        width: 48%;
+        background-size: cover;
+        text-align: center;
+/*         border-top: #ebebeb 2px solid; */
+        margin: 10px;
+        transition: all 500ms;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .material-symbols-outlined {
+        display: none;
+    }
+
+    .section-main:hover {
+        .descripcion{color: #666};
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+}
